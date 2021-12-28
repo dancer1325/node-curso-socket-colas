@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pantalla del publico</title>
+    <title>Pantalla del publico</title> <!-- Displayed in the browser bar -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -15,13 +15,13 @@
 <body>
 
     <table>
-        <tr>
+        <tr> <!-- 1! row-->
             <td valign="middle" class="ticket-actual">
-                <span id="lblTicket1" class="ticket-actual-numero"></span>
-                <br>
-                <span id="lblEscritorio1" class="ticket-actual-escritorio"></span>
-            </td>
-            <td>
+                <span id="lblTicket1" class="ticket-actual-numero"></span> <!-- Span is an inline container -->
+                <br> <!-- Insert a line break in the text -->
+                <span id="lblEscritorio1" class="ticket-actual-escritorio"></span> <!-- Span is an inline container -->
+            </td> <!-- First table data cell. Show the current ticket attended -->
+            <td> <!-- Second table data cell, to show the rest three tickets attended -->
                 <table>
                     <tr>
                         <td>
@@ -45,12 +45,12 @@
                         </td>
                     </tr>
                 </table>
-            </td>
+            </td> <!-- Second table data cell -->
         </tr>
     </table>
 
-    <script src="./socket.io/socket.io.js"></script>
-    <script src="./js/publico.js"></script>
+    <script src="./socket.io/socket.io.js"></script> <!-- Path created automatically by the socket server. Since it's in the same localhost -- Use "./" -->
+    <script src="./js/publico.js"></script> <!-- Import the publico.js. Since it's in the same localhost -- Use "./" -->
 
 </body>
 

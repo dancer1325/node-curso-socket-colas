@@ -1,4 +1,4 @@
-
+// File to custom the events via WebSocket between the client and the server
 // Referencias del HTML
 const lblOnline  = document.querySelector('#lblOnline');
 const lblOffline = document.querySelector('#lblOffline');
